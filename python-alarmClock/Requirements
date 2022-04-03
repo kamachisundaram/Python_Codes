@@ -1,0 +1,15 @@
+##Description
+Lightweight Alarm clock made with python existing modules
+##python Modules Required
+Tkinter
+playsound
+datetime
+time
+
+##Audio Requirements
+copy any wav format file to the location mention the path at line: #89
+
+## usage
+execute the AlarmClock,
+able to see the popup, enter a time , it will start the alarm
+Automatically window will close after the successful alarm set
