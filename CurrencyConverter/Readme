@@ -1,0 +1,15 @@
+##Modules required
+requests
+bs4
+
+## This is the basic example for the Web scraping
+#Input
+Currency from u want to convert
+Currency to convert
+Amount of the Currency
+
+##This script implicity scraping the information from the site
+www.xe.com and printing the values
+
+##if the RunPingtest()function fails, it is either the site is down or the internet connectivity is failed
+##we can extend this functionality using tkinter
