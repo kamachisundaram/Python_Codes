@@ -1,0 +1,44 @@
+##Readme
+OS Stress test using python
+
+Modules used
+Pytest;- framework which is used for unittesting and stress testing
+OS:- Module which interacts with the OS (cross platform supported)
+
+##I converted the existing cpp classes to python Reason for creating new class- getting lot of error in settingup the cpp environment
+#class FileOperation does the operations which are related to the file such as creation,deletion,updating file, getting the size of the file
+getting the access level of the file
+
+#we created a 3 testcases 
+tc1:test_filecreationDeletion
+* create a testfile
+* get the size
+* Modify a file
+* delete a file
+No exception should be seen
+tc2:test_filesizechange
+* create a testfile
+* get the size
+* Modify a file
+* verify the file is updated when the data is added
+* delete a file
+tc3:VerifyTheModification
+*Create a testfile
+** Add the content
+* Read the file
+* Verify the content both should be idle
+
+Extension:
+These suite can be extended like
+Random file creation
+Maximum number of file creation
+negative test scenarios as well
+
+
+#execute the Stress Test
+python -m pytest -v .\file_io.py --count 10000 > log.txt
+
+1000 mention the execution count
+sample log attached
+
+Note: This is the basic script for the filesystem, with this base code we will be able to design a full stress suite
